@@ -1,0 +1,10 @@
+The Flag: geek{grep_is_good_to_find_things_cEDf1591}
+
+The Commands: 'wget https://raw.githubusercontent.com/HarshitRSethi/Learn_To_Hack/refs/heads/main/LINUX_FUNDAMENTALS/Challenge1/file'
+		 : To download file from LINUX_FUNDAMENTALS->Challenge 1 directory. wget lets us download file from web, url can be obtained by clicking raw on github web of the file. 
+	      'grep "geek{[^}]*}" file -o"'
+		 : To see the flag we used grep which is used to search for string in file/files. The string we wanted was "geek{something}", that something part is represented by [^}]*.
+		   Using [..] means selecting charecter from allowed set, where set is '^}' i.e. everything except '}'. * means repeat 0 or more times. -o is for printing matching part
+		   only.
+
+Proof: https://drive.google.com/file/d/1WdPGBy9gMxv2aM9K4t_IarPFZDAmHum5/view?usp=sharing
