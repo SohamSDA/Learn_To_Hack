@@ -1,0 +1,33 @@
+Part 1: Directory & File Manipulation:-
+
+1. Create a new directory:                  mkdir --> make directory --> creates a new folder
+
+2. Enter that directory:                    cd --> change directory -->  moves u inside that folder
+
+3. Create a file named your_name.txt:       touch --> creates an empty file
+
+4. Rename this file to your_roll_no.txt:    mv --> move command --> used to move/rename files
+
+5. Step out of the directory:               cd .. --> moves to the parent directory(one level up)
+
+6. Delete the directory you just created:   rm -r directory_name --> used to delete a non -empty directory
+                                            recursively(if the directory is empty use the rmdir command, 
+                                            but if the directory contains subfolders/files prefer using 
+                                            the "rm" command with "-r" option (recursive)).
+
+
+
+Part 2: User Management:-
+
+1. Create a new user on your system: using the "useradd" command --> sudo useradd username
+
+2. Check which groups this user currently belongs to: u can check this by running groups username, it shows which 
+                                                      groups the user belong to.
+
+3. Assign this user to the sudo group: using the "usermod" command with the -a (append) and -G(groups) flags.                                                                    
+
+4. Create a password for this new user:   sudo passwd username --> used to set/change password of the mentioned user
+
+
+
+Google Drive link : https://drive.google.com/file/d/1j5qDotDaNQsfhHY2iQN0-Ve0O0xDmG1h/view?usp=sharing

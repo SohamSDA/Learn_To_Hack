@@ -1,0 +1,14 @@
+1. Output:           geek{grep_is_good_to_find_things_cEDf1591}
+
+
+2. Command used:     grep -ao "geek{[^}]*}" file
+  
+The above command was used to find the secret flag. geek{[^}]*} this printed everything which starts with geek{ --> captures everything inside --> stops at the first }
+-a --> it treated the file in which the flag was hidden as text
+-o --> it printed the exact match/ans required, not the whole line
+
+grep command is used to search for plan text data that matches a specific patter(here it was: `geek{}`).
+
+
+
+prrof: https://drive.google.com/file/d/1QZkgywmmL0Eakxo0Bh6Vh4xu50R-TUPr/view?usp=sharing
