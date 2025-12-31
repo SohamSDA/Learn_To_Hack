@@ -1,0 +1,21 @@
+Description
+The strings command extracts human-readable text from binary files. It is handy in CTFs for spotting hardcoded passwords, URLs, file paths, or hidden hints inside executables.
+
+Basic Syntax
+strings [OPTIONS] [FILE_NAME]
+
+Useful Flags
+1. -a (Scan the whole file)
+By default strings may skip some sections depending on file type; -a forces a full scan. Example: strings -a challenge.bin
+
+2. -n <NUMBER> (Minimum string length)
+Only show strings with at least this many characters, which reduces noise. Example: strings -n 6 firmware.bin
+
+3. -t <RADIX> (Show offsets)
+Print the byte offset of each string so you can locate it in a hex editor. Use d (decimal), x (hex), or o (octal). Example: strings -t x challenge.bin
+
+4. -f (Show file name)
+Prefix each result with the file name. Useful when scanning multiple files at once. Example: strings -f *.bin
+
+5. -e <ENCODING> (Select character encoding)
+Choose how strings are detected, such as s (7-bit), S (8-bit), or l (16-bit little-endian). Example: strings -e l secret.bin
